@@ -12,7 +12,7 @@ use File::chdir;
 
 use Path::Class;
 
-use Markdent::Handler::HTMLStream::Document;
+use Markdent::Handler::HTMLStream::Fragment;
 use Markdent::Parser;
 
 use Text::Trim;
@@ -189,7 +189,7 @@ sub pages {
 		my $buffer = q{};
 		open my $fh, '>', \$buffer;
 
-		my $handler = Markdent::Handler::HTMLStream::Document->new(
+		my $handler = Markdent::Handler::HTMLStream::Fragment->new(
 			title => $name,
 			output => $fh,
 #	    output => \*IN,
@@ -199,10 +199,6 @@ sub pages {
 		$parser->parse( markdown => $markdown );
 
 		my $html = $buffer;
-
-		# Gets embedded in wrapped html.
-		$html =~ s/^.*?<html>.*?<\/head>\s*<body>\s*//s;
-		$html =~ s/\s*<\/body>.*?<\/html>\s*$//s;
 
 		# Make anchors for headings.
 		$html =~ s/(<h\d>)(.*?)(<\/h\d>)/$1 . '<a name="' . make_anchor($2) . '" class="anchor"><\/a>' . $2 . $3/ges;
