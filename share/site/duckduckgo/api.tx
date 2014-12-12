@@ -230,7 +230,7 @@ Yes and no. We do not want to confuse users into thinking that your application 
 
 <p style="margin-top: 5px;">
 <span class="small">
-No, though many of the instant answers it provides are open source via our <a href="http://duckduckhack.com/">DuckDuckHack platform</a>, which is completely open source. For more information on DuckDuckGo open source, please see <a href="http://help.dukgo.com/customer/portal/articles/216390-open-source">this help article</a>.
+No, though many of the instant answers it provides are open source via our <a href="http://duckduckhack.com/">DuckDuckHack platform</a>, which is completely open source. For more information on DuckDuckGo open source, please see <a href="https://duck.co/help/open-source/opensource-overview">this help article</a>.
 </span>
 
 
@@ -239,7 +239,7 @@ No, though many of the instant answers it provides are open source via our <a hr
 
 <p style="margin-top: 5px;">
 <span class="small">
-We simply do not have the resources to support high queries per second (QPS) for a single machine. Generally, this isn't a problem because our API is designed to be used client-side by individual users after they take some specific action (like a search or right-click). We also get a lot of botnet attacks. As a result, there is automatic throttling for API requests that will probably not effect you if you use the API in a distributed fashion (i.e. on your application's front-end). For specific situations we also provide higher limits. If you feel you may be in such a situation, please <a href="http://help.dukgo.com/customer/portal/articles/775109-partnerships">reach out</a>. For legal limits, please see above for attribution and other requirements. 
+We simply do not have the resources to support high queries per second (QPS) for a single machine. Generally, this isn't a problem because our API is designed to be used client-side by individual users after they take some specific action (like a search or right-click). We also get a lot of botnet attacks. As a result, there is automatic throttling for API requests that will probably not effect you if you use the API in a distributed fashion (i.e. on your application's front-end). For specific situations we also provide higher limits. If you feel you may be in such a situation, please <a href="https://duck.co/help/company/partnerships">reach out</a>. For legal limits, please see above for attribution and other requirements. 
 </span>
 
 
